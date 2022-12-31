@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
-:root {
+div.icalingua-theme-holder {
     --panel-item-bg-hover: #373737 !important;
     --panel-sidebar-bg:    #1a1a1a !important;
+    --panel-item-bg:       #0066cc !important;
+    --panel-background:    #262626 !important;
+    --panel-header-bg:     #212121 !important;
+    --chat-bg-color-input: #1a1a1a !important;
 }
 
 /* 側邊欄部分 Start */
@@ -67,4 +71,13 @@ div.panel.rooms-panel.avatar-only > div.root > div.head {
 }
 /* avatar-only 時顯示消息數量 end */
 
-
+/* 聊天室選擇欄相關 */
+.el-badge__content {
+    border: none;
+}
+.el-badge__content--info {
+    background-color: #4d4d4d;
+}
+.panel.rooms-panel .content .root.selected * {
+    color: #ffffff;
+}
